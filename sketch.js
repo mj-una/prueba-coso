@@ -213,12 +213,12 @@ function mouseReleased() {
 //________________
 function windowResized() {
   resizeCanvas(...getSize());
-  document.querySelector(".q5-maxed").computedStyleMap.height = "100svh";
   background(...colorB);
 }
 
 //________________
 function getSize() {
+  document.querySelector(".q5-maxed").computedStyleMap.height = "100svh !important";
   const minSize = 400;
   const vw = window.visualViewport.width ?? window.innerWidth;
   const vh = window.visualViewport.height ?? window.innerHeight;
