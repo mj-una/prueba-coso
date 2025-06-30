@@ -127,7 +127,7 @@ function draw() {
   fill(0, 0, 100, 0.5);
   shadowBox(0, 0, 3);
   shadow(0, 0, 100);
-  text("hago animaciones", halfWidth, halfHeight * 0.3);
+  text("hago cosos", halfWidth, halfHeight * 0.3);
   pop();
 }
 
