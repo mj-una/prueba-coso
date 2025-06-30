@@ -23,6 +23,7 @@ function preload() {
 function setup() {
   createCanvas(...getSize());
   displayMode(MAXED);
+  pixelDensity(1);
   colorMode(HSB);
   shadowBox(0, 0, 12)
   textAlign(CENTER, CENTER);
@@ -212,6 +213,7 @@ function mouseReleased() {
 //________________
 function windowResized() {
   resizeCanvas(...getSize());
+  document.querySelector(".q5-maxed").computedStyleMap.height = "100svh";
   background(...colorB);
 }
 
