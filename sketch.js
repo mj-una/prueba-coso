@@ -23,7 +23,6 @@ function preload() {
 function setup() {
   createCanvas(...getSize());
   displayMode(MAXED);
-  pixelDensity(1);
   colorMode(HSB);
   shadowBox(0, 0, 12)
   textAlign(CENTER, CENTER);
@@ -218,7 +217,6 @@ function windowResized() {
 
 //________________
 function getSize() {
-  document.querySelector(".q5-maxed").computedStyleMap.height = "100svh !important";
   const minSize = 400;
   const vw = window.visualViewport.width ?? window.innerWidth;
   const vh = window.visualViewport.height ?? window.innerHeight;
