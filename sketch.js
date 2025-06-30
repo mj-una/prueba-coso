@@ -59,7 +59,7 @@ function draw() {
     shadowBox(0, 0, 3);
     shadow(0, 0, 100);
     textSize(68);
-    text("presiona", halfWidth, halfHeight);
+    text("presiona", halfWidth, halfHeight * 0.3);
     pop();
     return;
   }
@@ -70,7 +70,7 @@ function draw() {
     shadowBox(0, 0, 3);
     shadow(0, 0, 100);
     textSize(54);
-    text("mantene presionado", halfWidth, halfHeight * 1.5);
+    text("mantene\npresionado", halfWidth, halfHeight * 0.3);
     pop();
   }
 
@@ -129,7 +129,7 @@ function draw() {
   fill(0, 0, 100, 0.5);
   shadowBox(0, 0, 3);
   shadow(0, 0, 100);
-  text("hago animaciones", halfWidth, 60);
+  text("hago animaciones", halfWidth, halfHeight * 0.3);
   pop();
 }
 
