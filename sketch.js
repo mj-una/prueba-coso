@@ -25,9 +25,9 @@ function setup() {
   displayMode(MAXED);
   colorMode(HSB);
   shadowBox(0, 0, 12)
-  textAlign(CENTER, CENTER);
+  textAlign(CENTER, TOP);
   textFont(dejavu_italic);
-  textSize(40);
+  textSize(54);
   noStroke();
   cursor(HAND);
   audio.stop();
@@ -58,7 +58,6 @@ function draw() {
     fill(0, 0, 100, 0.5);
     shadowBox(0, 0, 3);
     shadow(0, 0, 100);
-    textSize(68);
     text("presiona", halfWidth, halfHeight * 0.3);
     pop();
     return;
@@ -69,7 +68,6 @@ function draw() {
     fill(0, 0, 100, 0.5);
     shadowBox(0, 0, 3);
     shadow(0, 0, 100);
-    textSize(54);
     text("mantene\npresionado", halfWidth, halfHeight * 0.3);
     pop();
   }
